@@ -14,15 +14,11 @@
     <script src="jquery.js"></script>
     <script>
  
-$( document ).ready(function() {
+$( "a" ).click(function( event ) {
  
-    $( "a" ).click(function( event ) {
+    event.preventDefault();
  
-        alert( "As you can see, the link no longer took you to jquery.com" );
- 
-        event.preventDefault();
- 
-    });
+    $( this ).hide( "slow" );
  
 });
 
